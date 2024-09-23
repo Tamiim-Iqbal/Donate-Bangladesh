@@ -34,7 +34,9 @@
         <nav class="bg-navbg">
             <div class="w-11/12 mx-auto flex justify-between items-center p-1 md:p-3">
                 <div>
-                    <button class="btn bg-primary text-xs md:text-lg px-2 py-0 md:px-6 hover:bg-lime-50 hover:border-2 hover:border-primary font-semibold">Blog</button>
+                    <a href="blog.html">
+                        <button class="btn bg-primary text-xs md:text-lg px-2 py-0 md:px-6 hover:bg-lime-50 hover:border-2 hover:border-primary font-semibold">Blog</button>
+                    </a>
                 </div>
                 <div class="flex items-center gap-1 md:gap-3">
                     <div class="border border-dashed">
@@ -48,7 +50,7 @@
                     </div>
                         
                     <p class="text-xs md:text-lg font-medium text-secondary">
-                        <span>5500</span>
+                        <span id="my-balance">10000</span>
                         <span>BDT</span>
                     </p>
                 </div>
@@ -59,15 +61,15 @@
         <!-- Section : Buttons -->
         <section class="w-11/12 mt-7 md:mt-10 mx-auto px-3">
             <div class="text-center">
-                <button class="btn bg-primary text-sm md:text-lg px-4 md:px-6 hover:bg-lime-50 hover:border-2 hover:border-primary font-semibold mr-2">Donation</button>
-                <button class="btn text-sm md:text-lg px-4 md:px-6 ml-2">History</button>
+                <button id="donation-btn" class="btn bg-primary text-sm md:text-lg px-4 md:px-6 hover:bg-lime-50 border hover:border-primary font-semibold mr-2">Donation</button>
+                <button id="history-btn" class="btn bg-white border hover:bg-white hover:border-primary text-sm md:text-lg px-4 md:px-6 ml-2">History</button>
             </div>
         </section>
 
     </header>
 
     <!-- Container : Main -->
-    <main class="hidden mt-7 md:mt-10 mb-5 md:mb-10">
+    <main id="main-section" class="mt-7 md:mt-10 mb-5 md:mb-10">
         <!-- Section : Card 1 -->
         <section class="lg:w-10/12 mx-auto">
             <div class="flex gap-6 flex-col md:flex-row border rounded-2xl p-5 lg:p-7">
@@ -85,19 +87,19 @@
                             </div>
                                 
                             <p class="text-sm md:text-base font-medium text-secondary">
-                                <span>52300</span>
+                                <span id="noakhali-balance">41000</span>
                                 <span>BDT</span>
                             </p>
                     </button>
 
                     <!-- Heading & Paragraph -->
-                    <h2 class="text-sm lg:text-xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="text-sm lg:text-xl font-semibold">Donate for Flood Rescue at Noakhali, Bangladesh</h2>
                     <p class="text-xs lg:text-base mt-2 lg:mt-3 text-secondary"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
 
                     <!-- Input -->
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-4 lg:mt-8 text-xs lg:text-base"/>
+                    <input id="noakhali-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-4 lg:mt-8 text-xs lg:text-base"/>
 
-                    <button class="btn bg-primary text-sm md:text-lg px-2 py-0 md:px-6 hover:bg-lime-50 hover:border-2 hover:border-primary font-semibold mt-4 lg:mt-6 w-full">Donate Now</button>
+                    <button id="noakhali-btn" class="btn bg-primary text-sm md:text-lg px-2 py-0 md:px-6 hover:bg-lime-50 hover:border-2 hover:border-primary font-semibold mt-4 lg:mt-6 w-full">Donate Now</button>
 
                 </div>
             </div>
@@ -120,7 +122,7 @@
                             </div>
                                 
                             <p class="text-sm md:text-base font-medium text-secondary">
-                                <span>52300</span>
+                                <span id="feni-balance">52000</span>
                                 <span>BDT</span>
                             </p>
                     </button>
@@ -130,9 +132,9 @@
                     <p class="text-xs lg:text-base mt-2 lg:mt-3 text-secondary">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. </p>
 
                     <!-- Input -->
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-4 lg:mt-8 text-xs lg:text-base"/>
+                    <input id="feni-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-4 lg:mt-8 text-xs lg:text-base"/>
 
-                    <button class="btn bg-primary text-sm md:text-lg px-2 py-0 md:px-6 hover:bg-lime-50 hover:border-2 hover:border-primary font-semibold mt-4 lg:mt-6 w-full">Donate Now</button>
+                    <button id="feni-btn" class="btn bg-primary text-sm md:text-lg px-2 py-0 md:px-6 hover:bg-lime-50 hover:border-2 hover:border-primary font-semibold mt-4 lg:mt-6 w-full">Donate Now</button>
 
                 </div>
             </div>
@@ -155,7 +157,7 @@
                             </div>
                                 
                             <p class="text-sm md:text-base font-medium text-secondary">
-                                <span>52300</span>
+                                <span id="quota-balance">80000</span>
                                 <span>BDT</span>
                             </p>
                     </button>
@@ -165,9 +167,9 @@
                     <p class="text-xs lg:text-base mt-2 lg:mt-3 text-secondary">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution, big or small, makes a difference. Please consider making a donation to support these brave individuals in their time of need, helping them rebuild their lives and move toward a brighter, healthier, and more secure future.</p>
 
                     <!-- Input -->
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-4 lg:mt-8 text-xs lg:text-base"/>
+                    <input id="quota-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-4 lg:mt-8 text-xs lg:text-base"/>
 
-                    <button class="btn bg-primary text-sm md:text-lg px-2 py-0 md:px-6 hover:bg-lime-50 hover:border-2 hover:border-primary font-semibold mt-4 lg:mt-6 w-full">Donate Now</button>
+                    <button id="quota-btn" class="btn bg-primary text-sm md:text-lg px-2 py-0 md:px-6 hover:bg-lime-50 hover:border-2 hover:border-primary font-semibold mt-4 lg:mt-6 w-full">Donate Now</button>
 
                 </div>
             </div>
@@ -175,9 +177,9 @@
     </main>
 
     <!-- Container : History -->
-    <section class="mt-7 md:mt-10 mb-5 md:mb-10">
+    <section id="history-section" class="hidden mt-7 md:mt-10 mb-5 md:mb-10">
         <div class="w-11/12 lg:w-10/12 mx-auto">
-            <ul>
+            <ul id="history-list">
                 <!-- <li class="border rounded-xl p-5 lg:py-5 lg:px-7 mb-6">
                     <h2 class="text-base lg:text-lg font-semibold">Donate for Flood Relief in Feni, Bangladesh</h2>
                     <p class="text-sm lg:text-base mt-2 lg:mt-3 text-secondary">
@@ -189,23 +191,23 @@
     </section>
 
     <!-- Container : Modals -->
-    <dialog id="my_modal" class="">
-        <form method=""
-            class="modal-box px-5 py-10 flex flex-col justify-center items-center">
-            <h2 class="font-semibold text-2xl text-primary my-5">
-                Congrates
+    <dialog id="my-modal" class="modal">
+        <form method="dialog"
+            class="modal-box px-5 py-5 flex flex-col justify-center items-center">
+            <h2 class="font-bold text-xl lg:text-3xl mb-4">
+                Congrates!
             </h2>
             <div class="text-center">
                 <img src="resources/assets/coin.png" alt="">
             </div>
             <div class="text-center">
-                <p class="font-medium text-base text-secondary">
+                <p class="font-medium text-sm lg:text-base text-secondary mt-4">
                     You have Donated for Humankind
                 </p>
-                <h3 class="text-lg font-semibold">Successfully</h3>
+                <h3 class="text-base lg:text-xl font-bold mt-4">Successfully</h3>
             </div>
             <button
-                class="btn bg-primary px-16 btn-md hover:bg-black transition-colors ease-in duration-300 text-white">
+                class="btn hover:bg-primary px-4 hover:border-primary  btn-md hover:bg-black transition-colors ease-in duration-300 text-secondary mt-4">
                 close confirmation
             </button>
         </form>
