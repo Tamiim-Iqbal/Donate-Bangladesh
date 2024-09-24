@@ -60,13 +60,21 @@ const noakhaliBtnEl = document.getElementById('noakhali-btn');
 noakhaliBtnEl.addEventListener('click', () => {
     // console.log("noakhali btn clicked");
     const noakhaliInputEl = document.getElementById('noakhali-input').value;
+
+    if(isNaN(noakhaliInputEl))
+    {
+        alert("Enter Valid Amount");
+        return
+    }
+
     const noakhaliInput = typeInt(noakhaliInputEl);
 
-    if(isNaN (noakhaliInput) || noakhaliInput < 0)
+    if(noakhaliInput < 0)
     {
         alert("Enter valid amount!");
         return;
     }
+    
     if(noakhaliInput > myBalance)
     {
         alert("Not enough money!")
@@ -96,13 +104,21 @@ const feniBtnEl = document.getElementById('feni-btn');
 feniBtnEl.addEventListener('click', () => {
     // console.log("feni btn clicked");
     const feniInputEl = document.getElementById('feni-input').value;
+
+    if(isNaN(feniInputEl))
+    {
+        alert("Enter Valid Amount");
+        return
+    }
+
     const feniInput = typeInt(feniInputEl);
 
-    if(isNaN (feniInput) || feniInput < 0)
+    if(feniInput < 0)
     {
         alert("Enter valid amount!");
         return;
     }
+
     if(feniInput > myBalance)
     {
         alert("Not enough money!")
@@ -132,13 +148,21 @@ const quotaBtnEl = document.getElementById('quota-btn');
 quotaBtnEl.addEventListener('click', () => {
     // console.log("quota btn clicked");
     const quotaInputEl = document.getElementById('quota-input').value;
+
+    if(isNaN(quotaInputEl))
+    {
+        alert("Enter Valid Amount");
+        return
+    }
+
     const quotaInput = typeInt(quotaInputEl);
 
-    if(isNaN (quotaInput) || quotaInput < 0)
+    if(quotaInput < 0)
     {
         alert("Enter valid amount!");
         return;
     }
+
     if(quotaInput > myBalance)
     {
         alert("Not enough money!")
