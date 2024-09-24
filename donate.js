@@ -61,7 +61,7 @@ noakhaliBtnEl.addEventListener('click', () => {
     // console.log("noakhali btn clicked");
     const noakhaliInputEl = document.getElementById('noakhali-input').value;
 
-    if(isNaN(noakhaliInputEl))
+    if(noakhaliInputEl === "" || isNaN(noakhaliInputEl))
     {
         alert("Enter Valid Amount");
         return
@@ -69,12 +69,12 @@ noakhaliBtnEl.addEventListener('click', () => {
 
     const noakhaliInput = typeInt(noakhaliInputEl);
 
-    if(noakhaliInput < 0)
+    if(noakhaliInput < 1)
     {
         alert("Enter valid amount!");
         return;
     }
-    
+
     if(noakhaliInput > myBalance)
     {
         alert("Not enough money!")
@@ -105,7 +105,7 @@ feniBtnEl.addEventListener('click', () => {
     // console.log("feni btn clicked");
     const feniInputEl = document.getElementById('feni-input').value;
 
-    if(isNaN(feniInputEl))
+    if(feniInputEl === "" || isNaN(feniInputEl))
     {
         alert("Enter Valid Amount");
         return
@@ -113,7 +113,7 @@ feniBtnEl.addEventListener('click', () => {
 
     const feniInput = typeInt(feniInputEl);
 
-    if(feniInput < 0)
+    if(feniInput < 1)
     {
         alert("Enter valid amount!");
         return;
@@ -149,7 +149,7 @@ quotaBtnEl.addEventListener('click', () => {
     // console.log("quota btn clicked");
     const quotaInputEl = document.getElementById('quota-input').value;
 
-    if(isNaN(quotaInputEl))
+    if(quotaInputEl === "" || isNaN(quotaInputEl))
     {
         alert("Enter Valid Amount");
         return
@@ -157,7 +157,7 @@ quotaBtnEl.addEventListener('click', () => {
 
     const quotaInput = typeInt(quotaInputEl);
 
-    if(quotaInput < 0)
+    if(quotaInput < 1)
     {
         alert("Enter valid amount!");
         return;
